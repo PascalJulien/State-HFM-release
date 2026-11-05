@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+     width="3.649mm" height="0.7mm" viewBox="-0.4845 -0.35 3.649 0.7">
+  <!-- Footprint in metres. Origin = centre of the rear axle. -->
+  <path
+d="M -0.4845 0.35 H 3.1645 V -0.35 H -0.4845 Z" />
+</svg>

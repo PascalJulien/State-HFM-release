@@ -1,0 +1,23 @@
+# Rebuilds of the acquisitions and of the campaigns
+runs/
+
+*.pyc
+__pycache__/
+
+# Bench-MR leaves these where it is launched
+benchmark_template.json
+debug.json
+sbpl_*.bmp
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Editable install metadata
+shfm.egg-info/
+
+# Bench-MR build output
+external/bench-mr/build/
+external/bench-mr/bin/benchmark
+
+# Compiled extension, produced by scripts/setup.sh
+external/bench-mr/python/metrics_bindings*.so

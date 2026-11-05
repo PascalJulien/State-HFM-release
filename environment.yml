@@ -1,0 +1,44 @@
+# Conda environment for shfm.
+#
+#   conda env create -f environment.yml
+#   conda activate shfm
+#
+# Every pin below is the version this work was actually produced with, read back
+# from the environment that ran it, not chosen by hand. The packages that
+# environment had installed with pip are installed with pip here as well.
+#
+# cupy is the one to look at before running anything, and it is taken from
+# conda-forge rather than from a pip wheel. The build that produced every result
+# here links a CUDA 10.2 runtime while the driver reports 12.7, which is fine
+# since the driver is backward compatible, but it means no `cupy-cudaXXx` wheel
+# describes this setup: the wheels pin a runtime, conda solves one against the
+# driver of the machine it runs on. What matters is the cupy version, 12.0.0,
+# because that is the one the vendored agd and its kernels were exercised
+# against.
+#
+# agd itself is vendored under external/agd; there is nothing to install for it.
+#
+# click, bitarray, psutil and tqdm are imported by the Bench-MR plotting and
+# benchmarking tools under external/bench-mr/python; pybind11 is what
+# scripts/setup.sh compiles the metric bindings with, for this Python.
+name: shfm
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - numpy=1.23.*
+  - scipy=1.10.*
+  - matplotlib=3.7.*
+  - pillow=9.4.*
+  - jupyter=1.0.*
+  - notebook=6.5.*
+  - nbconvert=7.2.*
+  - ipykernel
+  - psutil=5.9.*
+  - cupy=12.0.0
+  - pip
+  - pip:
+      - bitarray==3.8.1
+      - click==8.1.8
+      - tqdm==4.67.3
+      - pybind11==3.0.4

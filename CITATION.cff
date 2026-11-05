@@ -1,0 +1,88 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "shfm: State-embedded Hamiltonian Fast Marching for four-wheel-steering forklifts"
+type: software
+version: 1.0.0
+license: Apache-2.0
+authors:
+  - family-names: Pascal
+    given-names: Julien
+    affiliation: "Université Clermont Auvergne, Institut Pascal"
+repository-code: "https://github.com/PascalJulien/State-HFM"
+preferred-citation:
+  type: conference-paper
+  title: "Path Planning for Four-Wheel Steering Forklifts in Constrained Spaces: A State-Embedded Hamiltonian Fast Marching Approach"
+  authors:
+    - family-names: Pascal
+      given-names: Julien
+    - family-names: Mirebeau
+      given-names: Jean-Marie
+    - family-names: Thuilot
+      given-names: Benoit
+    - family-names: Checchin
+      given-names: Paul
+  collection-title: "2026 IEEE International Conference on Robotics and Automation (ICRA)"
+  conference:
+    name: "IEEE International Conference on Robotics and Automation (ICRA)"
+    city: Vienna
+    country: AT
+  publisher:
+    name: IEEE
+  year: 2026
+  start: 6279
+  end: 6286
+  doi: "10.1109/ICRA57385.2026.11697493"
+references:
+  - type: article
+    title: "Hamiltonian Fast Marching: A Numerical Solver for Anisotropic and Non-Holonomic Eikonal PDEs"
+    authors:
+      - family-names: Mirebeau
+        given-names: Jean-Marie
+      - family-names: Portegies
+        given-names: Jorg
+    journal: "Image Processing On Line"
+    volume: 9
+    start: 47
+    end: 93
+    year: 2019
+    doi: "10.5201/ipol.2019.227"
+  - type: article
+    title: "Massively parallel computation of globally optimal shortest paths with curvature penalization"
+    authors:
+      - family-names: Mirebeau
+        given-names: Jean-Marie
+      - family-names: Gayraud
+        given-names: Lionel
+      - family-names: Barrère
+        given-names: Remi
+      - family-names: Chen
+        given-names: Da
+      - family-names: Desquilbet
+        given-names: François
+    journal: "Concurrency and Computation: Practice and Experience"
+    volume: 35
+    issue: 2
+    year: 2023
+    doi: "10.1002/cpe.7472"
+  - type: article
+    title: "Bench-MR: A Motion Planning Benchmark for Wheeled Mobile Robots"
+    authors:
+      - family-names: Heiden
+        given-names: Eric
+      - family-names: Palmieri
+        given-names: Luigi
+      - family-names: Bruns
+        given-names: Leonard
+      - family-names: Arras
+        given-names: Kai O.
+      - family-names: Sukhatme
+        given-names: Gaurav S.
+      - family-names: Koenig
+        given-names: Sven
+    journal: "IEEE Robotics and Automation Letters"
+    volume: 6
+    issue: 3
+    start: 4536
+    end: 4543
+    year: 2021
+    doi: "10.1109/LRA.2021.3068913"
